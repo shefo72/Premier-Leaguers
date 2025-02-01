@@ -47,7 +47,7 @@ body {
 /* title */
 
 .title {
-    background-image: url(/Fixtures/Media/banner.png);
+    background-image: url(../../Images/Award/banner.png);
     margin: 20px 0 ;
     padding: 10px ;
     background-size: cover;
@@ -164,6 +164,8 @@ h1 {
 
 .player img {
     width: 200px;
+    overflow: hidden;
+    
 }
 .player h3 {
     margin: 10px 0 5px;
@@ -178,5 +180,6 @@ h1 {
 @media (max-width: 600px) {
     .players {
         grid-template-columns: repeat(1, 1fr);
-    }
+        padding: 0 ;
+            }
 }
