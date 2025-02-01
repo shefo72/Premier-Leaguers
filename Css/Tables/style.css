@@ -1,0 +1,195 @@
+body{
+    background-color: var(--mainColor);
+    font-family: "cairo", Arial, system-ui, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    line-height: 1.15;
+}
+:root {
+    --mainColor:#07001A ;
+    --subColor: #130D25 ; 
+    --green  : #1BB96B ;
+    --pink :#B91B5D ;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style of Content (Table) */
+#aa {
+    display: flex;
+    justify-content: center;
+}
+.content{
+    background-color: var(--subColor);
+    color: white;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    width:clamp(75px, 90vw, 1300px) ;
+    margin: auto ;
+}
+.head {
+    padding: 10px ;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:fit-content ;
+    margin-bottom: 20px;
+}
+.head img {
+    width:clamp(1rem, 60vw, 7rem) ;
+}
+.content h1 {
+    font-family: Righteous ;
+    font-size: clamp(1rem, 8vw, 4rem);
+}
+
+th {
+    padding:clamp(1rem, 1vw, 1rem) ;
+}
+
+.content .head span {
+    background-color: var(--pink);
+    -webkit-background-clip: text; 
+    -moz-background-clip: text; 
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent; 
+    animation: anim 4s linear infinite; 
+    animation-fill-mode: forwards; 
+    backface-visibility: hidden;
+}
+
+@keyframes anim {
+    0% { background-color: white; }
+    30% { background-color: var(--primary-color); } 
+    60% { background-color: var(--pink); }
+    100% { background-color: white; }
+}
+
+.content .table{
+    justify-self: center;
+    width: 95%;
+    text-align: left;
+    font-size:clamp(.1rem, 3vw, 1rem) ;
+    font-weight: 400;
+    width:clamp(400px, 83vw, 1170px) ;
+}
+.s-font{
+    text-align: center;
+    font-weight: bold;
+    font-size: clamp(13px, 1.5vw, 1rem);
+}
+th, td{
+    align-content: center;
+    text-align: center;
+}
+.table img{
+    width:clamp(1rem, 8vw, 3.5rem) ;
+    padding: 5px;
+}
+
+thead tr {
+    background-color: var(--pink);
+}
+
+tbody tr {
+    background-color: white;
+}
+
+.champions {
+    border-left: .3rem solid rgb(27, 57, 245);
+}
+
+.europa{
+    border-left: .3rem solid rgb(255, 105, 0);
+}
+.convrance{
+    border-left: .3rem solid rgb(0, 190, 20);
+}
+
+.down{
+    border-top: 2px solid rgb(255, 40, 130);
+}
+
+.sign .green {
+    border-left: .5rem solid rgb(0, 190, 20);
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 5px 0 0 5px;
+    padding-left: 6px;
+    font-weight: bold;
+}
+.sign .blue {
+    border-left: .5rem solid rgb(27, 57, 245);
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 5px 0 0 5px;
+    padding-left: 6px;
+    font-weight: bold;
+}
+.sign .yellow {
+    border-left: .5rem solid rgb(255, 105, 0);
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 5px 0 0 5px;
+    padding-left: 6px;
+    font-weight: bold;
+}
+.sign .yellow p ,
+.sign .blue p ,
+.sign .red p ,
+.sign .green p  {
+    font-size: clamp(16px, 2vw, 20px);
+}
+tbody tr:last-child {
+    border-left: 0rem solid #ffffff;
+}
+
+.aa th:first-child {
+    border-radius: 10px 0 0 0 ;
+}
+.aa th:last-child {
+    border-radius: 0 10px  0 0 ;
+}
+.aa th {
+    padding: 20px 0;
+}
+
+.sign {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 11px 50px 0;
+}
+.sign div {
+    width: fit-content;
+}
+.b-l {
+    border-radius: 0 0 0 10px;
+}
+
+tbody tr:last-child td.s-font:last-of-type   {
+    border-radius: 0 0 10px 0px;
+}
+
+tbody tr:last-child td {
+    border-bottom: 0px;
+}
+
+@media (max-width: 480px) {
+    .col-5 {
+        display: none;
+    }
+    .sign {
+        flex-direction: column;
+    }
+}
+
+
