@@ -1,0 +1,298 @@
+/* media query for all devices (small , medium, large) */
+@media (max-width: 480px) {
+    .container .login .left {
+        display: none;
+    }
+    .container {
+        padding: 15px 0;
+    }
+    .container .login {
+        padding: 15px 0;
+        grid-template-columns: 1fr !important ;
+    }
+    .container .login .right {
+        width: 100%;
+    }
+    .header .container .button {
+        display: none;
+    }
+}
+/* small screen */
+@media (min-width: 768px) {
+    .container {
+        width: 870px ;
+        height: clamp(1rem, 98vw, 60rem);
+    }
+    .container .login {
+        grid-template-columns: 1fr 1fr  ;
+    }
+}
+@media (max-width: 768px) {
+    .header .container .button {
+        display: none;
+    }
+    .header .container .main-nav .home a{
+        display: none;
+    }
+    .container {
+        width: 700px ;
+        padding: 40px 20px;
+
+        }
+    .container .login {
+        grid-template-columns: 1fr 1.5fr;
+        padding: 20px ;
+    }
+}
+/* Medium screen */
+@media (min-width: 992px) {
+    .container {
+        width: 970px ;
+    }
+    .container .login {
+        grid-template-columns: 1fr 1.2fr;
+    }
+}
+/* Large screen */
+@media (min-width: 1200px) {
+    .container {
+        width: 1100px ;
+    }
+    .container .login {
+        grid-template-columns: 1fr 1.2fr;
+    }
+}
+
+/* Color variables */
+:root {
+    --mainColor:#07001A ;
+    --subColor: #130D25 ; 
+    --green  : #1BB96B ;
+    --pink :#B91B5D ;
+}
+
+/* Style of Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--subColor);
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(29, 29, 29);
+    border-radius: 12px;
+}
+/* style the selected text */
+::selection {
+    color:white ;
+    background:var(--pink);
+}
+
+body {
+    font-family: "Cairo", Arial, sans-serif;
+    background-color: var(--mainColor);
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    background-color: var(--subColor);
+    margin: 100px auto;
+    border-radius: 15px;
+    width: clamp(1rem, 80vw, 70rem);
+}
+
+.container .login {
+    width:90% ;
+    height: 90%;
+    background-color: white;
+    margin: auto auto;
+    border-radius: 15px;
+    display: grid;
+}
+
+.container .login div {
+    height: 100%;
+}
+.container .login .left {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.container .login .left img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.container .login .right {
+    display: flex;
+    flex-direction: column;
+} 
+.container .login .right img {
+    width: clamp(150px, 25vw, 200px);
+    margin-right:  auto;
+    margin-left:  auto;
+    margin-top: clamp(10px , 10vw , 50px);
+    margin-bottom: clamp(5px , 5vw , 40px);
+}
+
+.container .login .right form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .login .right form input {
+    width: 85%;
+    padding: 10px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 5px;
+    background-color: #d9d9d9;
+    color: #000000;
+    height: clamp(0.1rem, 2vw, 1.5rem);
+    font-size: clamp(1rem , 2vw , 1.5rem) ;
+}
+
+.container .login .right form input:focus {
+    outline: 2px solid var(--mainColor);
+}
+
+.container .login .right form label {
+    margin-left: 6%;
+    color: var(--mainColor);
+    font-weight: bold ;
+    font-size: clamp(1rem , 2vw , 1.5rem);
+    padding: 10px 0 5px 0;
+}
+
+.container .login .right form .login-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-color: var(--green);
+    border: none;
+    color: white;
+    font-weight: bold ;
+    font-size: clamp(15px , 2vw , 30px);
+    width: 90%;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.container .login .right form .login-button:hover {
+    background-color: #179456 ;
+}
+.container .login .right a:hover {
+    color: var(--pink);
+}
+.container .login .right p{
+    align-items: center;
+    text-align: center;
+    font-size: clamp(1rem , 2vw , 1rem);
+    margin: 0;
+}
+.gender {
+    display: flex;
+    margin-top: 20px;
+}
+
+.gender-options {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    padding-right: 10px;
+    gap: 10px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.gender-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.gender-option input[type="radio"] {
+    appearance: none;
+    cursor: pointer;
+    border-radius: 55% !important;
+    outline: 0.5px solid var(--mainColor);
+
+}
+.gender-option input[type="radio"]:checked {
+    background-color: #B91B5D !important;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    font-size:(1rem , 2vw , 1.1rem);
+}
+.line::before,
+.line::after {
+    content: "";
+    flex: 1;
+    border-bottom: 3px solid #D9D9D9;
+    border-radius: 5px;
+    color: var(--mainColor);
+    font-weight: bold;
+}
+.line::before {
+    margin-right: 10px;
+    margin-left: 20px;
+}
+.line::after {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.container .login .right .login-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: fit-content;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.container .login .right .login-buttons .facebook,
+.container .login .right .login-buttons .x {
+    width: 90%;
+    gap: 10px;
+    margin-top: 0;
+    color: white;
+    border: none;
+    border-radius: 5px ;
+    height: clamp(0.1rem, 8vw, 2.8rem);
+    font-size: clamp(15px , 1.5vw , 20px);
+    font-weight: bold;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.container .login .right .login-buttons .facebook {
+    background-color: #1877F2;
+}
+
+.container .login .right .login-buttons .x {
+    background-color: #000000;
+
+}
+.container .login .right .login-buttons .facebook:hover {
+    background-color: #114c9a;
+}
+
+.container .login .right .login-buttons .x:hover {
+    background-color: #141313;
+}
