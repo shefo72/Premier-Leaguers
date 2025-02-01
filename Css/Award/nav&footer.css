@@ -197,7 +197,7 @@
     .header .container-header .main-nav  {
         font-size: 15px;
         width: fit-content;
-        padding: 20px;
+        padding-bottom: 15px;
     }
     .header .container-header .main-nav .awards {
         display: none;

@@ -100,7 +100,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width:clamp(1rem, 80vw, 70rem) ;
+    width:clamp(360px, 80vw, 1120px) ;
     height:clamp(1rem, 15vh, 6rem) ;
     position :relative;
 }
@@ -109,7 +109,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width:clamp(1rem, 80vw, 70rem) ;
+    width:clamp(360px, 80vw, 1120px) ;
     height:clamp(1rem, 15vh, 6rem) ;
     background-image: url(https://www.premierleague.com/resources/rebrand/v7.153.31/i/elements/backgrounds/primary-graphic_small.svg); 
     background-size: cover;
@@ -181,7 +181,7 @@ table td {
     height: fit-content;
     min-height: 60px;
     display: flex;
-    padding-bottom: 10px;
+    padding: 5px 0;
     border-radius: 0 0 15px 15px;
     border: 10px solid #1d1338;
     border-top: 5px solid var(--pink);
@@ -206,11 +206,11 @@ table td {
     flex-direction: row-reverse;
     width: 80%;
     padding: 10px;
-
 }
 .details .goal-home span i {
     align-items: center;
     display: flex;
+    padding-bottom: 5px;
 }
 .details .goal-home span p {
     padding:0 5px 3px 0 ;
@@ -233,6 +233,7 @@ table td {
     align-items: center;
     display: flex;
     padding-right: 5px;
+    padding-bottom: 5px;
 }
 .details .goal-away span p {
     padding:0 5px 0 0 ;

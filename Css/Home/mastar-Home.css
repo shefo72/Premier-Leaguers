@@ -236,9 +236,9 @@ body {
 
 @media (max-width:580px) {
     .header .container .main-nav  {
-        font-size: 16px;
+        font-size: 15px;
         width: fit-content;
-        padding-bottom: 20px;
+        padding-bottom: 15px;
     }
     .header .container .main-nav .home {
         display: none;
@@ -346,11 +346,12 @@ body {
     position: absolute;
     bottom: 0;
     color: #ffffff;
-    margin: 0 5% 2% 5%;
+    margin: 0 auto 2% auto;
     padding: 10px;
     text-align: center;
-    font-size:clamp(20px , 2.5vw , 40px);
+    font-size: clamp(20px, 2.5vw, 40px);
     font-weight: 700;
+    width: 100%;
 }
 .news .container  div img {
     /* width: 650px;
@@ -601,13 +602,12 @@ body {
 }
 
 .second_section .container .table .rank .tbody tr .pos {
-    padding-left: 15px;
+    padding-left: 10px;
 }
 
 .second_section .container .table .rank .tbody img {
-    /* height: 25px; */
     height: clamp(30px, 5vw, 28px);
-    padding-left: 25px;
+    padding-left: 10px;
 }
 .second_section .container .table .rank .tbody .two p {
     text-align: start;

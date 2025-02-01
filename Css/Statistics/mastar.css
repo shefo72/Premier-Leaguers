@@ -1,62 +1,73 @@
+/* General Styles */
 body {
     background-color: #07001A;
-    font-family: "cairo", Arial, system-ui, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-family: "Cairo", Arial, system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
 }
+
 :root {
-    --mainColor:#07001A ;
-    --subColor: #130D25 ; 
-    --green  : #1BB96B ;
-    --pink :#B91B5D ;
+    --mainColor: #07001A;
+    --subColor: #130D25;
+    --green: #1BB96B;
+    --pink: #B91B5D;
 }
-/* Style of Scrollbar */
+
+/* Scrollbar Styles */
 ::-webkit-scrollbar {
     width: 12px;
 }
-::-webkit-scrollbar-track{
-    background-color:var(--subColor);
+
+::-webkit-scrollbar-track {
+    background-color: var(--subColor);
 }
+
 ::-webkit-scrollbar-thumb {
     background-color: rgb(29, 29, 29);
     border-radius: 12px;
 }
-/* style the selected text */
+
+/* Selection Styles */
 ::selection {
-    color:white ;
-    background:var(--pink);
+    color: white;
+    background: var(--pink);
 }
+
+/* Title Section */
 .title {
     margin: 50px auto 30px;
-    padding: 10px ;
+    padding: 10px;
     background-image: url(https://www.premierleague.com/resources/rebrand/v7.153.31/i/elements/backgrounds/primary-bg_small.svg);
     background-size: cover;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width:clamp(1rem, 80vw, 70rem) ;
-    height:clamp(1rem, 15vw, 8rem) ;
-    position :relative;
+    width: clamp(360px, 80vw, 1120px);
+    height: clamp(1rem, 15vw, 8rem);
+    position: relative;
 }
+
 .title::after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width:clamp(1rem, 80vw, 70rem) ;
-    height:clamp(1rem, 15vw, 8rem) ;
-    background-image: url(https://www.premierleague.com/resources/rebrand/v7.153.31/i/elements/backgrounds/primary-graphic_small.svg); 
+    width: clamp(360px, 80vw, 1120px);
+    height: clamp(1rem, 15vw, 8rem);
+    background-image: url(https://www.premierleague.com/resources/rebrand/v7.153.31/i/elements/backgrounds/primary-graphic_small.svg);
     background-size: cover;
-    background-position: 0 0 ;
+    background-position: 0 0;
 }
+
 .title h1 {
     color: white;
-    font-size: clamp(1.5rem, 5vw, 3rem);
+    font-size: clamp(40px, 5vw, 3.5rem);
     font-weight: bolder;
     z-index: 1;
-} 
+}
 
+/* Main Container */
 .container {
     max-width: 1100px;
     margin: 40px auto;
@@ -66,16 +77,19 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 35px;
-    padding: 15px;
 }
 
+/* Goals Section */
 .goals {
     display: flex;
     flex-direction: column;
     background-color: white;
     border-radius: 10px;
     padding: 15px;
+    width: 90%;
+    margin: 20px auto;
 }
+
 .goals h2 {
     color: var(--mainColor);
     padding-left: 20px;
@@ -83,6 +97,7 @@ body {
     margin: 0;
 }
 
+/* Player Section */
 .player {
     display: flex;
     border-radius: 10px;
@@ -91,6 +106,7 @@ body {
     transition: 0.3s;
     position: relative;
 }
+
 .goals .players .player .left h3 {
     font-size: 30px;
     margin: 0;
@@ -98,10 +114,11 @@ body {
 
 .player .left {
     width: 100%;
-    border-radius: 5px ;
+    border-radius: 5px;
     margin-bottom: 10px;
     transition: 0.3s;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;}
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
 
 .player .left .club {
     width: 50px;
@@ -112,12 +129,14 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .player .left .info i {
     padding: 0 15px;
     font-size: 30px;
     font-weight: bold;
     color: var(--mainColor);
 }
+
 .player .left .info p {
     font-size: 30px;
     font-weight: bold;
@@ -131,44 +150,147 @@ body {
     justify-content: center;
     border-radius: 5px 0 0 0px;
 }
+
 .player .img-isak {
     background: linear-gradient(45deg, #8d100c8d 10%, rgba(126, 20, 20, 0.36) 50%, #750a06b8 50%);
     background-size: 50px 50px;
     background-color: #911712;
 }
+
 .player .img-Sels {
     background: linear-gradient(45deg, rgba(49, 8, 8, 0.135) 0%, rgba(126, 20, 20, 0.36) 50%, #d93d56 50%);
     background-size: 50px 50px;
     background-color: #d93d56;
 }
 
-
+/* Table Styles */
 tr,
 img {
     transition-duration: .4s;
 }
 
-
 td {
     text-align: left;
     padding: 10px;
-    border-bottom: 3px solid #07001A ;  
+    border-bottom: 3px solid #07001A;
     font-size: 20px;
     font-weight: bold;
 }
 
 table {
     width: 100%;
-    border-spacing: 0 0;        
+    border-spacing: 0 0;
 }
 
 table tbody tr td:first-child {
     padding-left: 20px;
 }
+
 table tbody tr td:last-child {
     padding-right: 20px;
 }
 
 .last td {
-    border-bottom: 0px solid #07001A ;  
+    border-bottom: 0px solid #07001A;
+}
+
+/* Responsive Styles */
+/* Mobile screen */
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .goals {
+        margin: 10px auto;
+    }
+
+    .title h1 {
+        font-size: 30px;
+    }
+
+    .player .left h3 {
+        font-size: 24px;
+    }
+
+    .player .left .info p {
+        font-size: 24px;
+    }
+
+    td {
+        font-size: 16px;
+    }
+}
+
+/* Small screen */
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+    }
+
+    .title h1 {
+        font-size: 35px;
+    }
+
+    .player .left h3 {
+        font-size: 28px;
+    }
+
+    .player .left .info p {
+        font-size: 28px;
+    }
+
+    td {
+        font-size: 18px;
+    }
+}
+
+/* Medium screen */
+@media (min-width: 769px) and (max-width: 992px) {
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 30px;
+    }
+
+    .title h1 {
+        font-size: 40px;
+    }
+
+    .player .left h3 {
+        font-size: 32px;
+    }
+
+    .player .left .info p {
+        font-size: 32px;
+    }
+
+    td {
+        font-size: 20px;
+    }
+}
+
+/* Large screen */
+@media (min-width: 993px) {
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 35px;
+    }
+
+    .title h1 {
+        font-size: 45px;
+    }
+
+    .player .left h3 {
+        font-size: 35px;
+    }
+
+    .player .left .info p {
+        font-size: 35px;
+    }
+
+    td {
+        font-size: 22px;
+    }
 }

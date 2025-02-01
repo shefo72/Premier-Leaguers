@@ -48,26 +48,26 @@ body {
 
 .title {
     background-image: url(../../Images/Award/banner.png);
-    margin: 20px 0 ;
     padding: 10px ;
     background-size: cover;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 30px auto 50px auto;
-    width:clamp(1rem, 90vw, 1200px) ;
-    height:clamp(1rem, 15vw, 8rem) ;
+    margin: 40px auto 40px auto;
+    width:clamp(360px, 80vw, 1120px) ;
+    height:clamp(1rem, 15vh, 6rem);
 }
 .title h1 {
     color: white;
-    font-size: clamp(1.5rem, 5vw, 3rem);
+    font-size: clamp(30px, 5vw, 3rem);
     font-weight: bolder;
     margin: 0 auto;
 } 
 /* Main Container */
 .container {
     max-width: 1200px;
+    width:clamp(360px, 80vw, 1120px) ;
     margin: 40px auto;
     background:var(--subColor);
     padding: 20px 15px;

@@ -228,6 +228,7 @@ body {
     .header .container-nav .main-nav  {
         font-size: 15px;
         width: fit-content;
+        padding-bottom: 15px;
     }
     .header .container-nav .main-nav .home {
         display: none;
@@ -244,6 +245,7 @@ body {
     }
     .header .container-nav .logo {
         width: fit-content;
+        margin: 0;
     }
     .mobile-nav {
         display: flex;

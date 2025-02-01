@@ -29,6 +29,7 @@ body{
 }
 .head {
     padding: 10px ;
+    background-image: url(../../Images/Award/banner.png);
     background-size: cover;
     border-radius: 10px;
     display: flex;
@@ -38,7 +39,7 @@ body{
     margin-bottom: 20px;
 }
 .head img {
-    width:clamp(1rem, 60vw, 7rem) ;
+    width: clamp(100px, 10vw, 150px) ;
 }
 .content h1 {
     font-family: Righteous ;
@@ -74,7 +75,6 @@ th {
     text-align: left;
     font-size:clamp(.1rem, 3vw, 1rem) ;
     font-weight: 400;
-    width:clamp(400px, 83vw, 1170px) ;
 }
 .s-font{
     text-align: center;
