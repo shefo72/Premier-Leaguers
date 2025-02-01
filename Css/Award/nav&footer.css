@@ -197,6 +197,7 @@
     .header .container-header .main-nav  {
         font-size: 15px;
         width: fit-content;
+        padding: 20px;
     }
     .header .container-header .main-nav .awards {
         display: none;
@@ -213,6 +214,7 @@
     }
     .header .container-header .logo {
         width: fit-content;
+        margin: 0;
     }
     .mobile-nav {
         display: flex;
