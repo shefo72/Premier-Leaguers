@@ -1,0 +1,258 @@
+/* media query for all devices (small , medium, large) */
+/* Phone */
+@media (max-width: 480px) {
+    html {
+        font-size: 12px; 
+    }
+    .time {
+        width: 25%;
+    }
+    .details .goal-home {
+        padding-right: 40px
+    }
+}
+@media (max-width: 767px) {
+    .time {
+        width: 20%;
+    }
+}
+/* small screen */
+@media (min-width: 768px) {
+    .container {
+        width: 750px ;
+    }
+    .time {
+        width: 10%;
+    }
+    .details .goal-home {
+        padding-right: 140px
+    }
+}
+/* Medium screen */
+@media (min-width: 992px) {
+    .container {
+        width: 970px ;
+    }
+    .time {
+        width: 12%;
+    }
+    .details .goal-home {
+        padding-right: 140px
+    }
+}
+/* Large screen */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px ;
+    }
+    .time {
+        width: 10%;
+    }
+    .details .goal-home {
+        padding-right: 60px
+    }
+}
+/* Color variables */
+:root {
+    --mainColor:#07001A ;
+    --subColor: #130D25 ; 
+    --green  : #1BB96B ;
+    --pink :#B91B5D ;
+}
+
+/* Style of Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--subColor);
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(29, 29, 29);
+    border-radius: 12px;
+}
+/* style the selected text */
+::selection {
+    color:white ;
+    background:var(--pink);
+}
+
+
+body {
+    background-color: #07001A;
+    font-family: "cairo", Arial, system-ui, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.title {
+    margin: 40px 0 40px  ;
+    padding: 10px ;
+    background-image: url(https://www.premierleague.com/resources/rebrand/v7.153.31/i/elements/backgrounds/primary-bg_small.svg);
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:clamp(1rem, 80vw, 70rem) ;
+    height:clamp(1rem, 15vh, 6rem) ;
+    position :relative;
+}
+.title::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:clamp(1rem, 80vw, 70rem) ;
+    height:clamp(1rem, 15vh, 6rem) ;
+    background-image: url(https://www.premierleague.com/resources/rebrand/v7.153.31/i/elements/backgrounds/primary-graphic_small.svg); 
+    background-size: cover;
+    background-position: 0 0 ;
+}
+.title h1 {
+    color: white;
+    font-size: clamp(30px, 5vw, 3rem);
+    font-weight: bolder;
+    z-index: 1;
+} 
+.main {
+    display: flex;
+    flex-direction: column;
+    width:clamp(360px, 80vw, 1120px) ;
+    margin-bottom: 40px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 8px;
+}
+
+table {
+    border-spacing: 0px 0px;
+}
+
+table td {
+    padding: 5px;
+    background-color: var(--subColor);
+    padding: 10px;
+    border-top: 5px solid #1d1338;
+}
+.first {
+    text-align: right;
+    border-top-left-radius: 10px;
+}
+
+.second {
+    border-top-right-radius: 10px;
+}
+
+.first ,
+.second {
+    color: white;
+    font-size: clamp(15px, 3vw, 30px) ;
+    font-weight: bolder;
+    width: 38%;
+}
+.time {
+    text-align: center;
+    color: var(--subColor);
+    padding: 0 3px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.hour {
+    border-radius:5px;
+    background-color: white;
+    line-height: 2.5;
+    font-weight: 900;
+    font-size: clamp(12px, 2vw, 1.2rem) ;
+}
+.logo {
+    padding-left: 5px;
+    justify-content: flex-end;
+}
+.logo img {
+    width:clamp(32px, 6vw, 3rem) ;
+}
+
+.details {
+    background-color: white;
+    height: fit-content;
+    min-height: 60px;
+    display: flex;
+    padding-bottom: 10px;
+    border-radius: 0 0 15px 15px;
+    border: 10px solid #1d1338;
+    border-top: 5px solid var(--pink);
+    transition: 0.3s;
+}
+
+.details div {
+    width: calc(100%/2);
+    align-items: center;
+    justify-content: space-around;
+}
+.details .goal-home {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: end;
+}
+.details .goal-home span {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: row-reverse;
+    width: 80%;
+    padding: 10px;
+
+}
+.details .goal-home span i {
+    align-items: center;
+    display: flex;
+}
+.details .goal-home span p {
+    padding:0 5px 3px 0 ;
+    margin: 0;
+}
+.details .goal-away {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: start;
+}
+.details .goal-away span {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 10px;
+    width: 80%;
+}
+.details .goal-away span i {
+    align-items: center;
+    display: flex;
+    padding-right: 5px;
+}
+.details .goal-away span p {
+    padding:0 5px 0 0 ;
+    margin: 0;
+}
+
+.details .goal-away span p,
+.details .goal-away span i,
+.details .goal-home span i,
+.details .goal-home span p {
+    font-size:clamp(15px, 2vw, 1.2rem);
+    color: var(--mainColor);
+}
+
+.details .goal-away span:not(:last-child),
+.details .goal-home span:not(:last-child) {
+    border-bottom: 2px solid #07001a60;
+}
+
+
+
+
+
