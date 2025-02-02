@@ -77,7 +77,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width:clamp(360px, 80vw, 1120px) ;
+    width:clamp(320px, 80vw, 1120px) ;
     height:clamp(1rem, 15vh, 6rem) ;
 }
 .title h1 {
@@ -88,7 +88,7 @@ body {
 .main {
     display: flex;
     flex-direction: column;
-    width:clamp(360px, 80vw, 1120px) ;
+    width:clamp(340px, 80vw, 1120px) ;
     margin-bottom: 20px;
 }
 .main .data { 
