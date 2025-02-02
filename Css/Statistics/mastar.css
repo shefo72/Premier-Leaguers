@@ -226,7 +226,7 @@ table tbody tr td:last-child {
 /* Small screen */
 @media (min-width: 481px) and (max-width: 768px) {
     .container {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
         gap: 25px;
     }
 
