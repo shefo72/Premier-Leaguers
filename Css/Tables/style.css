@@ -36,7 +36,8 @@ body{
     align-items: center;
     justify-content: center;
     height:fit-content ;
-    margin-bottom: 20px;
+    width: 90%;
+    margin: 30px auto;
 }
 .head img {
     width: clamp(100px, 10vw, 150px) ;
