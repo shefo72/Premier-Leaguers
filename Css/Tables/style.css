@@ -40,34 +40,46 @@ body{
     color: white;
     border-radius: 10px;
     padding-bottom: 20px;
+    padding-top: 25px;
     width:clamp(75px, 90vw, 1300px) ;
     margin: auto ;
 }
-.head {
-    padding: 10px ;
+.content-head {
+    /* padding: 10px; */
     background-image: url(../../Images/Award/banner.png);
-    background-size: cover;
+    /* background-size: cover; */
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width:clamp(75px, 90vw, 1000px) ;
+    margin: 30px auto;
+}
+.content-head .head {
+    padding: 10px ;
     display: flex;
     align-items: center;
     justify-content: center;
     height:fit-content ;
     width: 90%;
-    margin: 30px auto;
+    margin: 10px auto;
 }
-.head img {
+.content-head .head img {
     width: clamp(100px, 10vw, 150px) ;
 }
-.content h1 {
+.content-head h1 {
     font-family: Righteous ;
     font-size: clamp(1rem, 8vw, 4rem);
+    color: white;
+    margin: 0;
 }
 
 th {
     padding:clamp(1rem, 1vw, 1rem) ;
 }
 
-.content .head span {
+.content-head .head span {
     background-color: var(--pink);
     -webkit-background-clip: text; 
     -moz-background-clip: text; 
@@ -113,6 +125,7 @@ thead tr {
 
 tbody tr {
     background-color: white;
+    border-bottom: 0.5px solid #07001a41 ;
 }
 
 .champions {
@@ -209,4 +222,16 @@ tbody tr:last-child td {
     }
 }
 
+.col-4 {
+    min-width: fit-content;
+    display: flex;
+}
+thead tr .col-4 {
+    justify-content: center;
+    margin: 0 auto;
+}
+
+tbody tr td:first-child {
+    font-weight: bold;
+}
 

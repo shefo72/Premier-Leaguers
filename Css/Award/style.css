@@ -60,7 +60,7 @@ body {
 }
 .title h1 {
     color: white;
-    font-size: clamp(30px, 5vw, 3rem);
+    font-size: clamp(35px, 5vw, 3rem);
     font-weight: bolder;
     margin: 0 auto;
 } 
@@ -108,6 +108,7 @@ h1 {
 }
 .player .left .club {
     width: 50px;
+    padding-bottom: 5px;
 }
 .player .right {
     display: flex;
@@ -125,10 +126,16 @@ h1 {
 .player .img-emiliano,
 .player .img-salah,
 .player .img-onana,
-.player .img-welson{
+.player .img-welson,
+.player .img-bou    {
     display: flex;
     justify-content: center;
     border-radius: 5px 0 0 0px;
+}
+.player .img-bou {
+    background: linear-gradient(135deg, rgba(56, 6, 6, 0.135) 0%, rgba(73, 7, 7, 0.36) 50%, transparent 50%);
+    background-size: 50px 50px;
+    background-color: #8B0000;
 }
 .player .img-isak {
     background: linear-gradient(135deg, rgba(49, 8, 8, 0.135) 0%, rgba(50, 47, 47, 0.36) 50%, transparent 50%);
@@ -165,21 +172,30 @@ h1 {
 .player img {
     width: 200px;
     overflow: hidden;
-    
 }
 .player h3 {
     margin: 10px 0 5px;
     font-size: 25px;
     font-weight: bold;
 }
+.player .right h3 {
+    margin-bottom: 50px;
+}
 .player p {
     font-size: 20px;
     font-weight:bold ;
-    color: #DDD;
+    color: #ffffff;
+    margin: 5px;
 }
 @media (max-width: 600px) {
     .players {
         grid-template-columns: repeat(1, 1fr);
         padding: 0 ;
             }
+}
+
+.container i {
+    color: var(--pink);
+    font-size: 27px;
+    margin-bottom: 5px;
 }
