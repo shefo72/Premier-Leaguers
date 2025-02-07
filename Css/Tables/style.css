@@ -99,11 +99,12 @@ th {
 }
 
 .content .table{
-    justify-self: center;
+    justify-content: center;
     width: 95%;
     text-align: left;
     font-size:clamp(.1rem, 3vw, 1rem) ;
     font-weight: 400;
+    margin: 0 auto;
 }
 .s-font{
     text-align: center;
@@ -130,6 +131,7 @@ tbody tr {
 
 .champions {
     border-left: .3rem solid rgb(27, 57, 245);
+    box-sizing: border-box;
 }
 
 .europa{
@@ -190,16 +192,22 @@ tbody tr:last-child {
     border-radius: 0 10px  0 0 ;
 }
 .aa th {
-    padding: 20px 0;
+    padding: 20px 15px;
 }
 
 .sign {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    padding: 11px 50px 0;
+    padding: 5px;
+    width: 95%;
+    margin: 20px auto 0 auto ;
+    align-items: center;
+    justify-content: center;
 }
 .sign div {
     width: fit-content;
+    margin: 0 auto ;
+
 }
 .b-l {
     border-radius: 0 0 0 10px;
