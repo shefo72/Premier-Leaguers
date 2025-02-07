@@ -103,7 +103,7 @@ h1 {
 }
 .player .left {
     width: 60%;
-    border-radius: 5px 0 0 5px;
+    border-radius: 15px 0 0 5px;
     background-color: white;
 }
 .player .left .club {
@@ -132,6 +132,7 @@ h1 {
     justify-content: center;
     border-radius: 5px 0 0 0px;
 }
+
 .player .img-bou {
     background: linear-gradient(135deg, rgba(56, 6, 6, 0.135) 0%, rgba(73, 7, 7, 0.36) 50%, transparent 50%);
     background-size: 50px 50px;
@@ -186,6 +187,10 @@ h1 {
     font-weight:bold ;
     color: #ffffff;
     margin: 5px;
+}
+.player .right p i {
+    font-size: 20px;
+    color: white;
 }
 @media (max-width: 600px) {
     .players {
