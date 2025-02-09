@@ -531,7 +531,7 @@
             function toggleDetails(id, element) {
                 var details = document.getElementById(id);
                 var arrow = element;
-                var seconds = document.querySelectorAll('.second'); // يجيب كل العناصر اللي عندها الكلاس
+                var seconds = document.querySelectorAll('.second'); 
             
                 if (details.style.display === "none" || details.style.display === "") {
                     details.style.display = "flex";
@@ -539,7 +539,7 @@
                     arrow.classList.add('up');
                     arrow.style.borderBottomLeftRadius = "0";
                     
-                    // يطبق التغيير على كل العناصر اللي عندها كلاس "second"
+
                     seconds.forEach(second => {
                         second.style.borderBottomRightRadius = "0";
                     });
