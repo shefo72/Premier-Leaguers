@@ -531,29 +531,28 @@
             function toggleDetails(id, element) {
                 var details = document.getElementById(id);
                 var arrow = element;
-                var seconds = document.querySelectorAll('.second'); 
+                var seconds = document.querySelectorAll('.second');
             
-                if (details.style.display === "none" || details.style.display === "") {
-                    details.style.display = "flex";
+                if (details.classList.contains("show")) {
+                    details.style.height = details.scrollHeight + "px"; // تحديد الطول الفعلي قبل الإخفاء
+                    setTimeout(() => {
+                        details.classList.remove("show");
+                        details.style.height = "0";
+                    }, 10); // تأخير بسيط عشان يحصل الـ transition بشكل طبيعي
+                    arrow.classList.remove('up');
+                    arrow.classList.add('down');
+                    seconds.forEach(second => second.style.borderBottomRightRadius = "10px");
+                    arrow.style.borderBottomLeftRadius = "10px";
+                } else {
+                    details.style.height = "0"; // نجبره إنه يبدأ من الصفر
+                    details.classList.add("show");
+                    setTimeout(() => {
+                        details.style.height = details.scrollHeight + "px"; // نخليه ياخد الحجم المناسب
+                    }, 10); // تأخير بسيط عشان الانتقال يكون سلس
                     arrow.classList.remove('down');
                     arrow.classList.add('up');
                     arrow.style.borderBottomLeftRadius = "0";
-                    
-
-                    seconds.forEach(second => {
-                        second.style.borderBottomRightRadius = "0";
-                    });
-            
-                } else {
-                    details.style.display = "none";
-                    arrow.classList.remove('up');
-                    arrow.classList.add('down');
-            
-                    seconds.forEach(second => {
-                        second.style.borderBottomRightRadius = "10px";
-                    });
-            
-                    arrow.style.borderBottomLeftRadius = "10px";
+                    seconds.forEach(second => second.style.borderBottomRightRadius = "0");
                 }
             }
         </script>

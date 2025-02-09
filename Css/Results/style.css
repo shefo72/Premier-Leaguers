@@ -216,25 +216,18 @@ table tr {
     display: flex;
     padding: 0; 
     border-radius: 0 0 15px 15px;
-    border: 10px solid var(--mainColor);
-    border-top: 4px solid var(--subColor);
+    border: 5px solid #eeeeee;
+    border-top: 2px solid var(--subColor);
     height: 0;
     opacity: 0;
     overflow: hidden;
-    transition: height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+    transition: height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
 }
 
 .details.show {
-    height: auto;
     opacity: 1;
     padding: 5px 0; 
-    border: 5px solid #eeeeee;
-    border-top: 2px solid var(--subColor);
-    transition: 0.3s;
-    display: none;
-    transition: transform 0.3s ease; 
 }
-
 
 .details div {
     width: calc(100%/2);
