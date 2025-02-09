@@ -13,7 +13,7 @@
 }
 @media (max-width: 767px) {
     .time {
-        width: 20%;
+        width: 32%;
     }
 }
 /* small screen */
@@ -125,47 +125,81 @@ body {
     display: flex;
     flex-direction: column;
     width:clamp(360px, 80vw, 1120px) ;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 8px;
 }
 
 table {
     border-spacing: 0px 0px;
+    overflow: hidden;
 }
-
+table tr {
+    position: relative;
+    overflow: hidden;
+}
+table tr::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%; 
+    width: 0; 
+    height: 6px;
+    background: linear-gradient(137.27deg, #05f0ff 19.85%, #7367ff 91.08%, #963cff 113.26%);
+    transition: 0.4s ease; 
+    z-index: 1;
+    transform: translateX(-50%); 
+}
+.main:hover table tr:before{
+    width: 100%; 
+    left: 50%;  
+}
+table td:first-child {
+    border-left: 6px solid #eeeeee;
+}
+table td:last-child {
+    border-right: 6px solid #eeeeee;
+}
 table td {
     padding: 5px;
-    background-color: var(--subColor);
-    padding: 10px;
-    border-top: 5px solid #1d1338;
+    padding: 20px 5px;
+    border-top: 6px solid #eeeeee;
 }
+table tr {
+    background-color: #eeeeee;
+
+}
+
+
+
 .first {
     text-align: right;
-    border-top-left-radius: 10px;
 }
 
 .second {
-    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: border-bottom-right-radius 0.3s ease;
+
 }
 
 .first ,
 .second {
-    color: white;
+    color: var(--mainColor);
     font-size: clamp(15px, 3vw, 30px) ;
     font-weight: bolder;
     width: 38%;
 }
 .time {
     text-align: center;
-    color: var(--subColor);
-    padding: 0 3px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    color: white;
+    padding: 0 5px;
 }
 .hour {
     border-radius:5px;
-    background-color: white;
+    background-color: var(--mainColor);
     line-height: 2.5;
     font-weight: 900;
+    transition: 0.4s ease; 
     font-size: clamp(12px, 2vw, 1.2rem) ;
 }
 .logo {
@@ -183,10 +217,13 @@ table td {
     display: flex;
     padding: 5px 0;
     border-radius: 0 0 15px 15px;
-    border: 10px solid #1d1338;
-    border-top: 5px solid var(--pink);
+    border: 5px solid #eeeeee;
+    border-top: 2px solid var(--subColor);
     transition: 0.3s;
+    display: none;
+    transition: transform 0.3s ease; 
 }
+
 
 .details div {
     width: calc(100%/2);
@@ -252,6 +289,37 @@ table td {
 .details .goal-home span:not(:last-child) {
     border-bottom: 2px solid #07001a60;
 }
+
+
+
+
+
+
+
+
+
+
+
+.arrow {
+    cursor: pointer;
+    font-size: 20px;
+    transition: transform 0.3s ease; 
+    border-radius: 0px 0 0 10px;
+}
+
+.arrow.down i {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease; 
+    color: var(--mainColor);
+    transform: translateX(15px) ;
+}
+
+.arrow.up i {
+    transform: rotate(180deg) translateX(-15px);
+    transition: transform 0.3s ease;
+    color: var(--pink);
+}
+
 
 
 

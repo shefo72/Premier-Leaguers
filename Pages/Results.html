@@ -73,24 +73,25 @@
     <!-- End header -->
         
     <div class="container">
-        <div class="title"><h1>Gameweak 24</h1></div>
+        <div class="title"><h1>Gameweek 24</h1></div>
         <div class="main">
             <table>
                 <tbody>
                     <tr>
                         <div>
+                            <td class="arrow down" onclick="toggleDetails('details1', this)"><i class="fa-solid fa-chevron-down"></i></i></td>
                             <td class="first">Nott'm Forest</td>
                             <td class="logo"><img src="../Images/Forest.png" > </td>
                             <td class="time">
                                 <div class="hour">7 - 0</div>
                             </td>
                             <td class="logo"><img src="../Images/Brighton.png" ></td>
-                            <TD class="second">Brighton</TD>
+                            <TD class="second" id="second">Brighton</TD>
                         </div>
                     </tr>
                 </tbody>
             </table>
-            <div class="details">
+            <div class="details" id="details1">
                 <div class="goal-home">
                     <span>
                         <i class="fa-solid fa-futbol"></i>
@@ -131,18 +132,19 @@
                 <tbody>
                     <tr>
                         <div>
+                            <td class="arrow down" onclick="toggleDetails('details2', this)"><i class="fa-solid fa-chevron-down"></i></i></td>
                             <TD class="first">Bournemouth</TD>
                             <td class="logo"><img src="../Images/Bournemouth.png" > </td>
                             <td class="time">
                                 <div class="hour">0 - 2</div>
                             </td>
                             <td class="logo"><img src="../Images/liverpool.png" ></td>
-                            <TD class="second">Liverpool</TD>
+                            <TD class="second" id="second">Liverpool</TD>
                         </div>
                     </tr>
                 </tbody>
             </table>
-            <div class="details">
+            <div class="details" id="details2">
                 <div class="goal-home">
                 </div>
                 <div class="goal-away">
@@ -162,18 +164,19 @@
                 <tbody>
                     <tr>
                         <div>
+                            <td class="arrow down" onclick="toggleDetails('details3', this)"><i class="fa-solid fa-chevron-down"></i></i></td>
                             <TD class="first">Everton</TD>
                             <td class="logo"><img src="../Images/Everton.png" > </td>
                             <td class="time">
                                 <div class="hour">4 - 0</div>
                             </td>
                             <td class="logo"><img src="../Images/Leicster.png" ></td>
-                            <TD class="second">Leicester</TD>
+                            <TD class="second" id="second">Leicester</TD>
                         </div>
                     </tr>
                 </tbody>
             </table>
-            <div class="details">
+            <div class="details" id="details3">
                 <div class="goal-home">
                     <span>
                         <i class="fa-solid fa-futbol"></i>
@@ -201,18 +204,19 @@
                 <tbody>
                     <tr>
                         <div>
+                            <td class="arrow down" onclick="toggleDetails('details4', this)"><i class="fa-solid fa-chevron-down"></i></i></td>
                             <TD class="first">Ipswich</TD>
                             <td class="logo"><img src="../Images/Ipswich.png" > </td>
                             <td class="time">
                                 <div class="hour">1 - 2</div>
                             </td>
                             <td class="logo"><img src="../Images/Southampton.png" ></td>
-                            <TD class="second">Southampton</TD>
+                            <TD class="second" id="second">Southampton</TD>
                         </div>
                     </tr>
                 </tbody>
             </table>
-            <div class="details">
+            <div class="details" id="details4">
                 <div class="goal-home">
                     <span>
                         <i class="fa-solid fa-futbol"></i>
@@ -235,6 +239,7 @@
             <table>
                 <tbody>
                     <tr>
+                        <td class="arrow down" onclick="toggleDetails('details5', this)"><i class="fa-solid fa-chevron-down"></i></i></td>
                         <div>
                             <TD class="first">Newcastle</TD>
                             <td class="logo"><img src="../Images/NewCastle.png" > </td>
@@ -242,12 +247,12 @@
                                 <div class="hour">1 - 2</div>
                             </td>
                             <td class="logo"><img src="../Images/Fullham.png" ></td>
-                            <TD class="second">Fulham</TD>
+                            <TD class="second" id="second">Fulham</TD>
                         </div>
                     </tr>
                 </tbody>
             </table>
-            <div class="details">
+            <div class="details" id="details5"> 
                 <div class="goal-home">
                     <span>
                         <i class="fa-solid fa-futbol"></i>
@@ -271,18 +276,19 @@
                 <tbody>
                     <tr>
                         <div>
+                            <td class="arrow down" onclick="toggleDetails('details6', this)"><i class="fa-solid fa-chevron-down"></i></i></td>
                             <TD class="first">Wolves</TD>
                             <td class="logo"><img src="../Images/Wolvers.png" > </td>
                             <td class="time">
                                 <div class="hour">2 - 0</div>
                             </td>
                             <td class="logo"><img src="../Images/Aston.png" ></td>
-                            <TD class="second">Aston Villa</TD>
+                            <TD class="second" id="second">Aston Villa</TD>
                         </div>
                     </tr>
                 </tbody>
             </table>
-            <div class="details">
+            <div class="details" id="details6">
                 <div class="goal-home">
                     <span>
                         <i class="fa-solid fa-futbol"></i>
@@ -302,18 +308,19 @@
                 <tbody>
                     <tr>
                         <div>
+                            <td class="arrow down" onclick="toggleDetails('details7', this)"><i class="fa-solid fa-chevron-down"></i></i></td>
                             <TD class="first">Brentford</TD>
                             <td class="logo"><img src="../Images/Brentford.png" > </td>
                             <td class="time">
                                 <div class="hour">0 - 2</div>
                             </td>
                             <td class="logo"><img src="../Images/Hotspur.png" ></td>
-                            <TD class="second">Spurs</TD>
+                            <TD class="second" id="second">Spurs</TD>
                         </div>
                     </tr>
                 </tbody>
             </table>
-            <div class="details">
+            <div class="details" id="details7">
                 <div class="goal-home">
                 </div>
                 <div class="goal-away">
@@ -332,19 +339,20 @@
             <table>
                 <tbody>
                     <tr>
-                        <div>
+                        <div >
+                            <td class="arrow down" onclick="toggleDetails('details8', this)"><i class="fa-solid fa-chevron-down"></i></i></td>
                             <TD class="first">Man Utd</TD>
                             <td class="logo"><img src="../Images/ManUnited.png" > </td>
                             <td class="time">
                                 <div class="hour">0 - 2</div>
                             </td>
                             <td class="logo"><img src="../Images/Crystal.png" ></td>
-                            <TD class="second">Crystal Palace</TD>
+                            <TD class="second" id="second">Crystal Palace</TD>
                         </div>
                     </tr>
                 </tbody>
             </table>
-            <div class="details">
+            <div class="details" id="details8">
                 <div class="goal-home">
                 </div>
                 <div class="goal-away">
@@ -366,18 +374,19 @@
                 <tbody>
                     <tr>
                         <div>
+                            <td class="arrow down" onclick="toggleDetails('details9', this)"><i class="fa-solid fa-chevron-down"></i></i></td>
                             <TD class="first">Arsenal</TD>
                             <td class="logo"><img src="../Images/Arsenal.png" > </td>
                             <td class="time">
                                 <div class="hour">5 - 1</div>
                             </td>
                             <td class="logo"><img src="../Images/ManCity.png" ></td>
-                            <TD class="second">Man City</TD>
+                            <TD class="second" id="second">Man City</TD>
                         </div>
                     </tr>
                 </tbody>
             </table>
-            <div class="details">
+            <div class="details" id="details9">
                 <div class="goal-home">
                     <span>
                         <i class="fa-solid fa-futbol"></i>
@@ -413,18 +422,19 @@
                 <tbody>
                     <tr>
                         <div>
+                            <td class="arrow down" onclick="toggleDetails('details10', this)"><i class="fa-solid fa-chevron-down"></i></i></td>
                             <TD class="first">Chelsea</TD>
                             <td class="logo"><img src="../Images/Chelsea.png" > </td>
                             <td class="time">
                                 <div class="hour">2 - 1</div>
                             </td>
                             <td class="logo"><img src="../Images/WestHam.png" ></td>
-                            <TD class="second">West Ham</TD>
+                            <TD class="second" id="second">West Ham</TD>
                         </div>
                     </tr>
                 </tbody>
             </table>
-            <div class="details">
+            <div class="details" id="details10">
                 <div class="goal-home">
                     <span>
                         <i class="fa-solid fa-futbol"></i>
@@ -514,5 +524,38 @@
                 <p class="copyright">Copyright ©2025, <span> Faculty of Business, Alexandria University</span>. All rights reserved</p>
     </div>
         <!-- End Footer -->
+
+
+
+        <script>
+            function toggleDetails(id, element) {
+                var details = document.getElementById(id);
+                var arrow = element;
+                var seconds = document.querySelectorAll('.second'); // يجيب كل العناصر اللي عندها الكلاس
+            
+                if (details.style.display === "none" || details.style.display === "") {
+                    details.style.display = "flex";
+                    arrow.classList.remove('down');
+                    arrow.classList.add('up');
+                    arrow.style.borderBottomLeftRadius = "0";
+                    
+                    // يطبق التغيير على كل العناصر اللي عندها كلاس "second"
+                    seconds.forEach(second => {
+                        second.style.borderBottomRightRadius = "0";
+                    });
+            
+                } else {
+                    details.style.display = "none";
+                    arrow.classList.remove('up');
+                    arrow.classList.add('down');
+            
+                    seconds.forEach(second => {
+                        second.style.borderBottomRightRadius = "10px";
+                    });
+            
+                    arrow.style.borderBottomLeftRadius = "10px";
+                }
+            }
+        </script>
 </body>
 </html>
