@@ -14,6 +14,7 @@
 @media (max-width: 767px) {
     .time {
         width: 32%;
+        width: 32%;
     }
 }
 /* small screen */
@@ -166,8 +167,9 @@ table td {
     border-top: 6px solid #eeeeee;
 }
 table tr {
-    background-color: #eeeeee;
 
+    background-color: white;
+    background-color: #eeeeee;
 }
 
 
@@ -179,7 +181,6 @@ table tr {
 .second {
     border-bottom-right-radius: 10px;
     transition: border-bottom-right-radius 0.3s ease;
-
 }
 
 .first ,
@@ -212,11 +213,21 @@ table tr {
 
 .details {
     background-color: white;
-    height: fit-content;
-    min-height: 60px;
     display: flex;
-    padding: 5px 0;
+    padding: 0; 
     border-radius: 0 0 15px 15px;
+    border: 10px solid var(--mainColor);
+    border-top: 4px solid var(--subColor);
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+}
+
+.details.show {
+    height: auto;
+    opacity: 1;
+    padding: 5px 0; 
     border: 5px solid #eeeeee;
     border-top: 2px solid var(--subColor);
     transition: 0.3s;
@@ -287,31 +298,15 @@ table tr {
 
 .details .goal-away span:not(:last-child),
 .details .goal-home span:not(:last-child) {
-    border-bottom: 2px solid #07001a60;
+    border-bottom: 2px solid #07001a7d;
 }
-
-
-
-
-
-
-
-
-
 
 
 .arrow {
     cursor: pointer;
     font-size: 20px;
-    transition: transform 0.3s ease; 
+    transition: transform 0.4s ease; 
     border-radius: 0px 0 0 10px;
-}
-
-.arrow.down i {
-    transform: rotate(0deg);
-    transition: transform 0.3s ease; 
-    color: var(--mainColor);
-    transform: translateX(15px) ;
 }
 
 .arrow.up i {
@@ -319,9 +314,9 @@ table tr {
     transition: transform 0.3s ease;
     color: var(--pink);
 }
-
-
-
-
-
-
+.arrow.down i {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease; 
+    color: var(--mainColor);
+    transform: translateX(15px) ;
+}
