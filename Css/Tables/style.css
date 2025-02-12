@@ -63,9 +63,7 @@ body{
     width: 90%;
     margin: 10px auto;
 }
-.content-head .head img {
-    width: clamp(100px, 10vw, 150px) ;
-}
+
 .content-head h1 {
     font-family: Righteous ;
     font-size: clamp(1rem, 8vw, 4rem);
@@ -119,7 +117,6 @@ th, td{
 }
 
 thead tr {
-    /* background-color: var(--pink); */
     background-color:var(--pink);
 }
 
@@ -141,7 +138,7 @@ tbody tr {
     content: "";
     position: absolute; 
     height: 100%;
-    width: 8px;
+    width: clamp(3px, 1vw, 6px);
     top: 0;
     left: 0;
 }
