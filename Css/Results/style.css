@@ -167,7 +167,6 @@ table td {
     border-top: 6px solid #eeeeee;
 }
 table tr {
-
     background-color: white;
     background-color: #eeeeee;
 }
@@ -216,8 +215,8 @@ table tr {
     display: flex;
     padding: 0; 
     border-radius: 0 0 15px 15px;
-    border: 5px solid #eeeeee;
-    border-top: 2px solid var(--subColor);
+    border: 10px solid var(--mainColor);
+    border-top: 4px solid var(--subColor);
     height: 0;
     opacity: 0;
     overflow: hidden;
