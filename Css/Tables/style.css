@@ -63,7 +63,9 @@ body{
     width: 90%;
     margin: 10px auto;
 }
-
+.content-head .head img {
+    width: clamp(100px, 10vw, 150px) ;
+}
 .content-head h1 {
     font-family: Righteous ;
     font-size: clamp(1rem, 8vw, 4rem);
