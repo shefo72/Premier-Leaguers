@@ -202,5 +202,9 @@ h1 {
 .container i {
     color: var(--pink);
     font-size: 27px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     margin-bottom: 5px;
+}
+.player:hover i {
+    transform: rotate(360deg);
 }
