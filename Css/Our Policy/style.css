@@ -34,10 +34,6 @@ body {
     background: var(--mainColor);
 }
 
-.main {
-    padding: 2rem;
-}
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -84,13 +80,11 @@ h1 i {
     font-size: 2.5rem;
     color: var(--gold);
     margin-bottom: 1.5rem;
+    width: fit-content;
     display: block;
-    transition: color 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.card:hover i {
-    color: var(--pink);
-}
 
 h2 {
     font-size: 1.8rem;
@@ -109,6 +103,13 @@ h2::after {
     width: 70px;
     height: 2px;
     background: var(--pink);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card:hover h2::after {
+    width: 200px;
+}
+.card:hover i {
+    transform: rotate(360deg);
 }
 
 .etc {
